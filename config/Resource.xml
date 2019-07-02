@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resource>
+	<!-- 机器列表 -->
+	<Machines this="M01">
+		<Machine name="M01" host="20.200.25.132" />
+	</Machines>
+
+	<!-- 日志打印器 -->
+	<Logger path="log/" level="debug" size="10MB" />
+
+	<!-- 数据库 -->
+	<Database plat_db_pool="fsdbpool" plat_db_timeout="60" boot_monitor="no" monitor_sql_topn="10">
+                <!--<DatabasePool name="rbdp" sid="exps" type="oracle" host="20.200.25.131"-->
+                        <!--port="1521" username="fbps" password="fbps2017" size="-5" />-->
+                <!--<DatabasePool name="fbps" sid="exps" type="oracle" host="20.200.25.131"-->
+                        <!--port="1521" username="exps" password="exps2017" size="-5" />-->
+
+		<!--预演fbps-->
+				<!--<DatabasePool name="fbps" sid="exps" type="oracle" host="20.200.22.38"-->
+					  <!--port="1521" username="exps" password="exps2017" size="-5" />-->
+
+		<!--自己服务器 mysql-->
+		<!--<DatabasePool name="GzZyGjv7devHome"  type="mysql"
+					  url="jdbc:mysql://192.168.1.11:3306/v7dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"
+					  username="v7dev" password="V7dev_123456" size="-10" />-->
+
+		<!--虚拟机服务器 mysql-->
+		<!--<DatabasePool name="GzZyGjv7devVirtrul"  type="mysql"
+					  url="jdbc:mysql://192.168.159.135:3306/v7dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"
+					  username="v7dev" password="V7dev_123456" size="-10" />-->
+		<!--贵州银行遵义分行股金项目ltts开发环境 mysql-->
+		<DatabasePool name="GzZyGjv7dev"  type="mysql"
+					  url="jdbc:mysql://192.168.1.167:3306/v7dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"
+					  username="v7dev" password="v7dev" size="-10" />
+
+		<!--&lt;!&ndash;贵州银行遵义分行股金项目ltts测试环境 mysql&ndash;&gt;
+		<DatabasePool name="GzZyGjv7test"  type="mysql"
+					  url="jdbc:mysql://192.168.1.167:3306/v7test?useUnicode=true&amp;characterEncoding=UTF-8"
+					  username="v7test" password="v7test" size="-10" />
+
+		&lt;!&ndash;贵州银行遵义分行股金项目ltts移植环境 mysql&ndash;&gt;
+		<DatabasePool name="GzZyGjv7yizhi"  type="mysql"
+					  url="jdbc:mysql://192.168.1.167:3306/v7yizhi?useUnicode=true&amp;characterEncoding=UTF-8"
+					  username="v7yizhi" password="v7yizhi" size="-10" />-->
+
+
+	</Database>
+</Resource>
